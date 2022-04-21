@@ -4,14 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg"
-        >
+    tools:context=".MainActivity"
+    android:background="@drawable/ic_splash_screen"
+    >
 
-    </RelativeLayout>
+
 
 
 </RelativeLayout>
