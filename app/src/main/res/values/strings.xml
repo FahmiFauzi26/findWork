@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Find Work</string>
+    <string name="lupa_kata_sandi">Lupa Kata Sandi?</string>
+    <string name="masuk_sebagai_perusahaan">Masuk Sebagai Perusahaan</string>
 </resources>

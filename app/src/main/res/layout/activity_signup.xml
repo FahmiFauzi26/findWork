@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signup">
+    tools:context=".signup"
+    android:background="@drawable/ic_splash_screen">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_back"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_daftar_iv"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="141dp"/>
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_username_et"
+        android:hint="Username"/>
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="433dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_email"
+        android:hint="Email"/>
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="498dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_group_12703"
+        android:hint="Password"/>
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="562dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_retype_et"
+        android:hint="Re-Type Password"/>
+
+    <Button
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="619dp"
+        android:background="@drawable/gradient_buttonn"
+        android:text="Daftar" />
+    <TextView
+        android:layout_width="309dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="751dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="21dp"
+        android:text="Sudah Punya Akun?"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="309dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="751dp"
+        android:layout_marginBottom="21dp"
+        android:text="Masuk"
+        android:textColor="#1A73E9" />
+
+</RelativeLayout>
