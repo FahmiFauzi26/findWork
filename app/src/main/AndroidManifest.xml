@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
         <activity
+            android:name=".comingSoon"
+            android:exported="false" />
+        <activity
             android:name=".resetPassword"
             android:exported="false" />
         <activity
