@@ -17,14 +17,13 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-<<<<<<< HEAD:app/src/main/java/com/example/findwork/comingSoon.java
-public class comingSoon extends AppCompatActivity {
+
+public class comingsoon extends AppCompatActivity {
     TextView username, email;
     Button btn_logout;
 
-=======
-public class ComingSoon extends AppCompatActivity {
->>>>>>> 5e987a4fc60e84e444f502ba7616dbd65b8f4fa6:app/src/main/java/com/example/findwork/ComingSoon.java
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

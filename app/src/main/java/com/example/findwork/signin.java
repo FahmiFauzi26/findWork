@@ -7,12 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-<<<<<<< HEAD:app/src/main/java/com/example/findwork/signin.java
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-=======
->>>>>>> 5e987a4fc60e84e444f502ba7616dbd65b8f4fa6:app/src/main/java/com/example/findwork/SignIn.java
+
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,17 +20,16 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-<<<<<<< HEAD:app/src/main/java/com/example/findwork/signin.java
+
 public class signin extends AppCompatActivity {
     private FirebaseAuth mAuth;
     TextView lupaSandi, btn_daftar;
     ImageView btn_back;
     Button btn_masuk;
 
-=======
-public class SignIn extends AppCompatActivity {
-        TextView kuntul;
->>>>>>> 5e987a4fc60e84e444f502ba7616dbd65b8f4fa6:app/src/main/java/com/example/findwork/SignIn.java
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +58,7 @@ public class SignIn extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SignIn.this, MainActivity.class));
+                startActivity(new Intent(signin.this, MainActivity.class));
             }
         });
         btn_masuk.setOnClickListener(new View.OnClickListener() {
@@ -84,36 +82,36 @@ public class SignIn extends AppCompatActivity {
             et_loginEmail.requestFocus();
             return;
         }
-            if (password.isEmpty()) {
-                et_loginPassword.setError("Tidak boleh kosong!");
-                et_loginPassword.requestFocus();
-                return;
-            }
-            if (email.isEmpty()) {
-                et_loginEmail.setError("Tidak boleh kosong!");
-                et_loginEmail.requestFocus();
-                return;
-            }
-            mAuth.signInWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                showCs();
-
-                            } else {
-                                Toast.makeText(signin.this, "Login gagal ! "
-                                        , Toast.LENGTH_LONG).show();
-
-                            }
-                        }
-                    });
-
+        if (password.isEmpty()) {
+            et_loginPassword.setError("Tidak boleh kosong!");
+            et_loginPassword.requestFocus();
+            return;
         }
+        if (email.isEmpty()) {
+            et_loginEmail.setError("Tidak boleh kosong!");
+            et_loginEmail.requestFocus();
+            return;
+        }
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            showCs();
+
+                        } else {
+                            Toast.makeText(signin.this, "Login gagal ! "
+                                    , Toast.LENGTH_LONG).show();
+
+                        }
+                    }
+                });
+
+    }
 
 
     private void showCs() {
-        Intent intent = new Intent(this, comingSoon.class);
+        Intent intent = new Intent(signin.this, comingsoon.class);
         startActivity(intent);
         finish();
     }

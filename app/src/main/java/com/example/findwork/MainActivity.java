@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btn_pekerja.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SignIn.class));
+                startActivity(new Intent(MainActivity.this, signin.class));
             }
         });
     }

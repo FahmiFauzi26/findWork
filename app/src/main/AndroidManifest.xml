@@ -9,10 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
+<!--        <activity-->
+<!--<<<<<<< HEAD-->
+<!--            android:name=".comingSoon"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".resetPassword"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".signup"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".signin"-->
+<!--            android:exported="false" />-->
         <activity
-<<<<<<< HEAD
-            android:name=".comingSoon"
-            android:exported="false" />
+            android:name=".MainActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".resetPassword"
             android:exported="false" />
@@ -22,30 +44,12 @@
         <activity
             android:name=".signin"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-=======
-            android:name=".SplashScreen"
->>>>>>> 5e987a4fc60e84e444f502ba7616dbd65b8f4fa6
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".comingsoon"
+            android:exported="false"/>
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="false" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ResetPassword"
-            android:exported="false" />
-        <activity
-            android:name=".SignUp"
-            android:exported="false" />
-        <activity
-            android:name=".SignIn"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
     </application>
 
 </manifest>

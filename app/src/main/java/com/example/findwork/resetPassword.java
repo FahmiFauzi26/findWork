@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-<<<<<<< HEAD:app/src/main/java/com/example/findwork/resetPassword.java
-public class resetPassword extends AppCompatActivity {
+
+class resetPassword extends AppCompatActivity {
+
+
+
     ImageView btn_back;
     TextView btn_masuk;
-=======
-public class ResetPassword extends AppCompatActivity {
 
->>>>>>> 5e987a4fc60e84e444f502ba7616dbd65b8f4fa6:app/src/main/java/com/example/findwork/ResetPassword.java
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
