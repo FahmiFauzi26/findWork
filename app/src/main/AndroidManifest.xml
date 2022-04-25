@@ -10,16 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
         <activity
-            android:name=".resetPassword"
-            android:exported="false" />
-        <activity
-            android:name=".signup"
-            android:exported="false" />
-        <activity
-            android:name=".signin"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
