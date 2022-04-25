@@ -30,6 +30,7 @@
         android:layout_marginEnd="33dp"
         android:background="@drawable/gradient_buttonn"
         android:text="Masuk Sebagai Pencari kerja"
+        style="@style/MaterialAlertDialog.Material3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,6 +46,7 @@
         android:layout_marginEnd="33dp"
         android:background="@drawable/gradient_buttonn"
         android:text="@string/masuk_sebagai_perusahaan"
+        style="@style/MaterialAlertDialog.Material3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

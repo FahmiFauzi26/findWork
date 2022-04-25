@@ -7,9 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
+<<<<<<< HEAD:app/src/main/java/com/example/findwork/signin.java
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+=======
+>>>>>>> 5e987a4fc60e84e444f502ba7616dbd65b8f4fa6:app/src/main/java/com/example/findwork/SignIn.java
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,12 +21,17 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+<<<<<<< HEAD:app/src/main/java/com/example/findwork/signin.java
 public class signin extends AppCompatActivity {
     private FirebaseAuth mAuth;
     TextView lupaSandi, btn_daftar;
     ImageView btn_back;
     Button btn_masuk;
 
+=======
+public class SignIn extends AppCompatActivity {
+        TextView kuntul;
+>>>>>>> 5e987a4fc60e84e444f502ba7616dbd65b8f4fa6:app/src/main/java/com/example/findwork/SignIn.java
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +60,7 @@ public class signin extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(signin.this, MainActivity.class));
+                startActivity(new Intent(SignIn.this, MainActivity.class));
             }
         });
         btn_masuk.setOnClickListener(new View.OnClickListener() {

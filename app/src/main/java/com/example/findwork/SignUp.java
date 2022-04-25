@@ -19,11 +19,16 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+<<<<<<< HEAD:app/src/main/java/com/example/findwork/signup.java
 public class signup extends AppCompatActivity {
     private FirebaseAuth mAuth;
     ImageView btn_back;
     TextView btn_masuk;
     Button btn_daftar;
+=======
+public class SignUp extends AppCompatActivity {
+
+>>>>>>> 5e987a4fc60e84e444f502ba7616dbd65b8f4fa6:app/src/main/java/com/example/findwork/SignUp.java
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

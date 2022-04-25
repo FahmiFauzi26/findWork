@@ -4,7 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".comingSoon">
+    tools:context=".ComingSoon">
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress_circular"-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginLeft="163dp"-->
+<!--        android:layout_marginTop="559dp" />-->
 
     <TextView
         android:layout_width="285dp"
