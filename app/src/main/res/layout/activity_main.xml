@@ -22,25 +22,23 @@
 
     <Button
         android:id="@+id/btn_pekerja"
+        style="@style/MaterialAlertDialog.Material3"
         android:layout_width="285dp"
-        android:layout_height="35dp"
 
+        android:layout_height="48dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="429dp"
         android:layout_marginEnd="33dp"
         android:background="@drawable/gradient_buttonn"
         android:text="Masuk Sebagai Pencari kerja"
-        style="@style/MaterialAlertDialog.Material3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_perusahaan"
+        android:id="@+id/btn_sebagai_perusahaan"
         android:layout_width="285dp"
-        android:layout_height="35dp"
-        android:visibility="invisible"
-
+        android:layout_height="48dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="484dp"
         android:layout_marginEnd="33dp"

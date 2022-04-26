@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perusahaan.SignUpPerusahaanActivity"
+    android:background="@drawable/ic_splash_screen">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="376dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="140dp"
+        android:background="@drawable/ic_daftar_sebagai_perusahaan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_nama_perusahaan"
+        android:layout_width="285dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/ic_username_et"
+        android:hint="Nama Perusahaan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="285dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/ic_email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="285dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/ic_group_12703"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_repassword"
+        android:layout_width="285dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/ic_retype_et"
+        android:hint="Re-Type Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="285dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/gradient_buttonn"
+        android:text="Daftar"
+        style="@style/MaterialAlertDialog.Material3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="309dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="Sudah Punya Akun?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_punya_akun"
+        android:layout_width="309dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="572dp"
+        android:text=" Masuk"
+        android:textColor="#1A739E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

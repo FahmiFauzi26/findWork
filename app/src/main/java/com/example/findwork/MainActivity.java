@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.findwork.perusahaan.SignInPerusahaanActivity;
+
 public class MainActivity extends AppCompatActivity {
     Button btn_pekerja;
 
@@ -16,10 +18,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btn_pekerja = findViewById(R.id.btn_pekerja);
+        Button btn_perusahaan = findViewById(R.id.btn_sebagai_perusahaan);
+
         btn_pekerja.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, signin.class));
+            }
+        });
+
+        btn_perusahaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SignInPerusahaanActivity.class));
             }
         });
     }

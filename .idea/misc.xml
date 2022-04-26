@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_daftar_sebagai_perusahaan.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_splash_screen.xml" value="0.129" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_username_et.xml" value="0.123" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_atur_ulang_password_perusahaan.xml" value="0.22" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_main.xml" value="0.1359375" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_reset_password.xml" value="0.1359375" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_sign_in_perusahaan.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_sign_up_perusahaan.xml" value="0.22" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_signin.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/gradient_button.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/gradient_buttonn.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/ic_back.xml" value="0.17407407407407408" />

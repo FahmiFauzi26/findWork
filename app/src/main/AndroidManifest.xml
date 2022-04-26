@@ -9,29 +9,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
-<!--        <activity-->
-<!--<<<<<<< HEAD-->
-<!--            android:name=".comingSoon"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".resetPassword"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".signup"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".signin"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".perusahaan.ResetPasswordPerusahaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.SignUpPerusahaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.SignInPerusahaanActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- <<<<<<< HEAD -->
+        <!-- android:name=".comingSoon" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".resetPassword" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".signup" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".signin" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -44,12 +51,9 @@
         <activity
             android:name=".signin"
             android:exported="false" />
-        <activity android:name=".comingsoon"
-            android:exported="false"/>
-<!--        <activity-->
-<!--            android:name=".MainActivity"-->
-<!--            android:exported="false" />-->
-
+        <activity
+            android:name=".comingsoon"
+            android:exported="false" />
     </application>
 
 </manifest>
