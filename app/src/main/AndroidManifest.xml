@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
         <activity
+            android:name=".pencarikerja.MainPencariKerja"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.MainPerusahaan"
+            android:exported="false" />
+        <activity
             android:name=".perusahaan.ResetPasswordPerusahaanActivity"
             android:exported="false" />
         <activity

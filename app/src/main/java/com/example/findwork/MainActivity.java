@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.findwork.pencarikerja.MainPencariKerja;
+import com.example.findwork.perusahaan.MainPerusahaan;
 import com.example.findwork.perusahaan.SignInPerusahaanActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,10 +29,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//        btn_perusahaan.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(MainActivity.this, SignInPerusahaanActivity.class));
+//            }
+//        });
+
         btn_perusahaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SignInPerusahaanActivity.class));
+                startActivity(new Intent(MainActivity.this, MainPencariKerja.class));
             }
         });
     }
