@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.findwork.pencarikerja.MainPencariKerja;
-import com.example.findwork.perusahaan.MainPerusahaan;
-import com.example.findwork.perusahaan.SignInPerusahaanActivity;
+import com.example.findwork.pencarikerja.HomePencariKerjaActivity;
+import com.example.findwork.perusahaan.HomePerusahaanActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_pekerja;
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btn_perusahaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MainPencariKerja.class));
+                startActivity(new Intent(MainActivity.this, HomePerusahaanActivity.class));
             }
         });
     }

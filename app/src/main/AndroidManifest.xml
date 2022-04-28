@@ -10,10 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
         <activity
-            android:name=".pencarikerja.MainPencariKerja"
+            android:name=".perusahaan.BuatLowonganPerusahaanActivity"
             android:exported="false" />
         <activity
-            android:name=".perusahaan.MainPerusahaan"
+            android:name=".perusahaan.AkunPerusahaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.KelolaPelamarPerusahaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.HomePerusahaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.PerjalananPencariKerjaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.HomePencariKerjaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.BookmarkPencariKerjaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.AkunPencariKerjaActivity"
             android:exported="false" />
         <activity
             android:name=".perusahaan.ResetPasswordPerusahaanActivity"

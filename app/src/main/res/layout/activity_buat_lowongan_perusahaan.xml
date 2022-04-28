@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perusahaan.BuatLowonganPerusahaanActivity"
+    android:background="@drawable/ic_splash_screen"
+    android:padding="20dp">
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-10dp"
+        android:background="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_back"
+        android:padding="10dp"
+        android:text="Buat Lowongan"
+        android:textColor="#1A73E9" />
+
+    <ScrollView
+        android:id="@+id/formBuatLowongan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_back"
+        android:layout_marginVertical="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/posisiLowongan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posisi Lowongan"/>
+
+                <EditText
+                    android:layout_below="@id/posisiLowongan"
+                    android:id="@+id/editTextPosisiLowongan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_below="@id/editTextPosisiLowongan"
+                    android:id="@+id/lokasiKotaKabupaten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi Kota/Kabupaten"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_below="@id/lokasiKotaKabupaten"
+                    android:id="@+id/editTextLokasiKotaKabupten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_below="@id/editTextLokasiKotaKabupten"
+                    android:id="@+id/alamatLowongan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Lowongan"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_below="@id/alamatLowongan"
+                    android:id="@+id/editTextAlamatLowongan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_below="@id/editTextAlamatLowongan"
+                    android:id="@+id/minimalPendidikan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minimal Pendidikan"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_below="@id/minimalPendidikan"
+                    android:id="@+id/editTextMinimalPendidikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_below="@id/editTextMinimalPendidikan"
+                    android:id="@+id/gaji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gaji"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_below="@id/gaji"
+                    android:id="@+id/editTextGaji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_below="@id/editTextGaji"
+                    android:id="@+id/tenggatLowongan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tenggat Lowongan"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_below="@id/tenggatLowongan"
+                    android:id="@+id/editTextTenggatLowongan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_below="@id/editTextTenggatLowongan"
+                    android:id="@+id/deskripsiPekerjaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Pekerjaan"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_below="@id/deskripsiPekerjaan"
+                    android:id="@+id/editTextDeskripsiPekerjaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_below="@id/editTextDeskripsiPekerjaan"
+                    android:id="@+id/kualifikasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kualifikasi"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_below="@id/kualifikasi"
+                    android:id="@+id/editTextKualifikasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formBuatLowongan"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_buat"
+        android:text="Button"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

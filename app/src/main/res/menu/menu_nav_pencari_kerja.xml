@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_lowongan_kerja"
+        android:id="@+id/homePencariKerja"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Lowongan"/>
+        android:title="Home"/>
 
     <item
-        android:id="@+id/nav_perjalanan_saya"
+        android:id="@+id/perjalananSaya"
         android:icon="@drawable/ic_baseline_history_24"
-        android:title="Perjalanan"/>
+        android:title="Perjalanan Saya"/>
 
     <item
-        android:id="@+id/nav_bookmark"
+        android:id="@+id/bookmark"
         android:icon="@drawable/ic_baseline_bookmark_added_24"
         android:title="Bookmark"/>
 
     <item
-        android:id="@+id/nav_akun_pencari_kerja"
+        android:id="@+id/akunPencariKerja"
         android:icon="@drawable/ic_baseline_account_circle_24"
         android:title="Akun"/>
 </menu>
