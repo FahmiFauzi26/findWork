@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
         <activity
+            android:name=".resetPasswords"
+            android:exported="false" />
+        <activity
             android:name=".perusahaan.BuatLowonganPerusahaanActivity"
             android:exported="false" />
         <activity
@@ -55,6 +58,9 @@
         <!-- android:name=".signin" -->
         <!-- android:exported="false" /> -->
         <activity
+            android:name=".resetPassword"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
@@ -67,9 +73,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".resetPassword"
-            android:exported="false" />
-        <activity
             android:name=".signup"
             android:exported="false" />
         <activity
@@ -77,6 +80,12 @@
             android:exported="false" />
         <activity
             android:name=".comingsoon"
+            android:exported="false" />
+        <activity
+            android:name=".signinPerusahaan"
+            android:exported="false" />
+        <activity
+            android:name=".resetPasswordPerusahaan"
             android:exported="false" />
     </application>
 

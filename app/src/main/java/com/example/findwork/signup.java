@@ -13,15 +13,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.findwork.pencarikerja.HomePencariKerjaActivity;
+import com.example.findwork.perusahaan.HomePerusahaanActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class signup extends AppCompatActivity {
     private FirebaseAuth mAuth;
+    FirebaseFirestore mstore;
     ImageView btn_back;
     TextView btn_masuk;
     Button btn_daftar;
@@ -33,7 +44,6 @@ public class signup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        mAuth = FirebaseAuth.getInstance();
         btn_back = findViewById(R.id.btn_back);
         btn_masuk = findViewById(R.id.btn_masuk);
         btn_daftar = findViewById(R.id.btn_daftar);
@@ -41,8 +51,26 @@ public class signup extends AppCompatActivity {
 
 
         mAuth = FirebaseAuth.getInstance();
+        mstore = FirebaseFirestore.getInstance();
+        if (mAuth.getCurrentUser() != null) {
+            DocumentReference df = FirebaseFirestore.getInstance().collection("User Perusahaan").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
+            df.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                @Override
+                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    if(documentSnapshot.getString("isPerusahaan")!=null){
+                        startActivity(new Intent(signup.this, HomePerusahaanActivity.class));
+                        finish();
+                    }
+                    if(documentSnapshot.getString("isUser")!=null){
+                        startActivity(new Intent(signup.this, HomePencariKerjaActivity.class));
+                        finish();
+                    }
+                }
+            });
+
+        }
         if (mAuth.getCurrentUser() != null){
-            finish();
+            showLogin();
             return;
         }
 
@@ -101,10 +129,22 @@ public class signup extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            User user = new User(username, email, password, repassword);
-                            FirebaseDatabase.getInstance().getReference("users")
-                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            FirebaseUser uuser = mAuth.getCurrentUser();
+//                            User user = new User(username, email, password, repassword);
+                            DocumentReference df = mstore.collection("Users").document((uuser.getUid()));
+                            Map<String,Object> userInfo = new HashMap<>();
+                            userInfo.put("Username",username);
+                            userInfo.put("Email",email);
+                            userInfo.put("Password",password);
+                            userInfo.put("Repassword",repassword);
+                            //level
+                            userInfo.put("isUser","1");
+                            //
+                            df.set(userInfo).addOnCompleteListener(new OnCompleteListener<Void>() {
+
+//                     GANTI FIRESTORE       FirebaseDatabase.getInstance().getReference("users")
+//                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+//                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     Toast.makeText(signup.this, "Berhasil", Toast.LENGTH_LONG).show();

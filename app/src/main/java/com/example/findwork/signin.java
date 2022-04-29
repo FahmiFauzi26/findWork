@@ -1,10 +1,13 @@
 package com.example.findwork;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 
@@ -15,15 +18,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.findwork.pencarikerja.HomePencariKerjaActivity;
+import com.example.findwork.perusahaan.HomePerusahaanActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class signin extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    TextView lupaSandi, btn_daftar;
+    FirebaseFirestore mstore;
+    TextView btn_lupasandi, btn_daftar;
     ImageView btn_back;
     Button btn_masuk;
 
@@ -35,18 +45,32 @@ public class signin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
         mAuth = FirebaseAuth.getInstance();
+        mstore = FirebaseFirestore.getInstance();
         if (mAuth.getCurrentUser() != null) {
-            showCs();
-            return;
+            DocumentReference df = FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
+            df.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                @Override
+                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    if(documentSnapshot.getString("isPerusahaan")!=null){
+                        startActivity(new Intent(signin.this, HomePerusahaanActivity.class));
+                        finish();
+                    }
+                    if(documentSnapshot.getString("isUser")!=null){
+                        startActivity(new Intent(signin.this,HomePencariKerjaActivity.class));
+                        finish();
+                    }
+                }
+            });
+
         }
         btn_masuk = findViewById(R.id.btn_masuk);
-        lupaSandi = findViewById(R.id.lupaSandi);
+        btn_lupasandi = findViewById(R.id.btn_lupasandi);
         btn_daftar = findViewById(R.id.btn_daftar);
         btn_back = findViewById(R.id.btn_back);
-        lupaSandi.setOnClickListener(new View.OnClickListener() {
+        btn_lupasandi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(signin.this, resetPassword.class));
+                startActivity(new Intent(signin.this, resetPasswords.class));
             }
         });
         btn_daftar.setOnClickListener(new View.OnClickListener() {
@@ -93,26 +117,41 @@ public class signin extends AppCompatActivity {
             return;
         }
         mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            showCs();
-
-                        } else {
-                            Toast.makeText(signin.this, "Login gagal ! "
-                                    , Toast.LENGTH_LONG).show();
-
-                        }
+                    public void onSuccess(AuthResult authResult) {
+                        checkLevel(authResult.getUser().getUid());
                     }
                 });
+//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        if (task.isSuccessful()) {
+//                            checkLevel(AuthResult);
+//
+//                        } else {
+//                            Toast.makeText(signin.this, "Login gagal ! "
+//                                    , Toast.LENGTH_LONG).show();
+//
+//                        }
+//                    }
+//                });
 
     }
 
 
-    private void showCs() {
-        Intent intent = new Intent(signin.this, comingsoon.class);
-        startActivity(intent);
-        finish();
+
+
+    private void checkLevel(String uid){
+        DocumentReference df = mstore.collection("Users").document(uid);
+        df.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                Log.d(TAG, "onSuccess: "+ documentSnapshot.getData());
+                if(documentSnapshot.getString("isUser") != null)
+                    startActivity(new Intent(signin.this, HomePencariKerjaActivity.class));
+                finish();
+            }
+        });
     }
 }

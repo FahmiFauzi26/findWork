@@ -82,7 +82,7 @@
 <!--        android:background="@drawable/ic_group_12703"-->
 <!--        android:hint="Password" />-->
     <TextView
-        android:id="@+id/lupaSandi"
+        android:id="@+id/btn_lupasandi"
         android:layout_width="109dp"
         android:layout_height="18dp"
         android:layout_marginStart="218dp"
