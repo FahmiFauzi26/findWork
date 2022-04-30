@@ -8,7 +8,6 @@
     android:background="@drawable/ic_splash_screen"
     android:padding="20dp">
 
-
     <Button
         android:id="@+id/btn_back"
         android:layout_width="40dp"
@@ -28,7 +27,7 @@
     <ScrollView
         android:id="@+id/formBuatLowongan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/btn_back"
         android:layout_marginVertical="20dp">
 
@@ -45,141 +44,166 @@
                     android:id="@+id/posisiLowongan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Posisi Lowongan"/>
+                    android:text="Posisi Lowongan" />
 
                 <EditText
-                    android:layout_below="@id/posisiLowongan"
                     android:id="@+id/editTextPosisiLowongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/posisiLowongan"
+                    android:background="@drawable/ic_edit_text"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp" />
 
                 <TextView
-                    android:layout_below="@id/editTextPosisiLowongan"
                     android:id="@+id/lokasiKotaKabupaten"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lokasi Kota/Kabupaten"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_below="@id/editTextPosisiLowongan"
+                    android:layout_marginTop="10dp"
+                    android:text="Lokasi Kota/Kabupaten" />
 
                 <EditText
-                    android:layout_below="@id/lokasiKotaKabupaten"
                     android:id="@+id/editTextLokasiKotaKabupten"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/lokasiKotaKabupaten"
+                    android:background="@drawable/ic_edit_text"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp" />
 
                 <TextView
-                    android:layout_below="@id/editTextLokasiKotaKabupten"
                     android:id="@+id/alamatLowongan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Alamat Lowongan"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_below="@id/editTextLokasiKotaKabupten"
+                    android:layout_marginTop="10dp"
+                    android:text="Alamat Lowongan" />
 
                 <EditText
-                    android:layout_below="@id/alamatLowongan"
                     android:id="@+id/editTextAlamatLowongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/alamatLowongan"
+                    android:background="@drawable/ic_edit_text"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp" />
 
                 <TextView
-                    android:layout_below="@id/editTextAlamatLowongan"
                     android:id="@+id/minimalPendidikan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Minimal Pendidikan"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_below="@id/editTextAlamatLowongan"
+                    android:layout_marginTop="10dp"
+                    android:text="Minimal Pendidikan" />
 
                 <EditText
-                    android:layout_below="@id/minimalPendidikan"
                     android:id="@+id/editTextMinimalPendidikan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/minimalPendidikan"
+                    android:background="@drawable/ic_edit_text"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp" />
 
                 <TextView
-                    android:layout_below="@id/editTextMinimalPendidikan"
                     android:id="@+id/gaji"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gaji"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_below="@id/editTextMinimalPendidikan"
+                    android:layout_marginTop="10dp"
+                    android:text="Gaji" />
 
                 <EditText
-                    android:layout_below="@id/gaji"
                     android:id="@+id/editTextGaji"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/gaji"
+                    android:background="@drawable/ic_edit_text"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp" />
 
                 <TextView
-                    android:layout_below="@id/editTextGaji"
                     android:id="@+id/tenggatLowongan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tenggat Lowongan"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_below="@id/editTextGaji"
+                    android:layout_marginTop="10dp"
+                    android:text="Tenggat Lowongan" />
 
                 <EditText
-                    android:layout_below="@id/tenggatLowongan"
                     android:id="@+id/editTextTenggatLowongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/tenggatLowongan"
+                    android:background="@drawable/ic_edit_text"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp" />
 
                 <TextView
-                    android:layout_below="@id/editTextTenggatLowongan"
                     android:id="@+id/deskripsiPekerjaan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Deskripsi Pekerjaan"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_below="@id/editTextTenggatLowongan"
+                    android:layout_marginTop="10dp"
+                    android:text="Deskripsi Pekerjaan" />
 
                 <EditText
-                    android:layout_below="@id/deskripsiPekerjaan"
                     android:id="@+id/editTextDeskripsiPekerjaan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/deskripsiPekerjaan"
+                    android:background="@drawable/ic_edit_text"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp" />
 
                 <TextView
-                    android:layout_below="@id/editTextDeskripsiPekerjaan"
                     android:id="@+id/kualifikasi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kualifikasi"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_below="@id/editTextDeskripsiPekerjaan"
+                    android:layout_marginTop="10dp"
+                    android:text="Kualifikasi" />
 
                 <EditText
-                    android:layout_below="@id/kualifikasi"
                     android:id="@+id/editTextKualifikasi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/kualifikasi"
+                    android:background="@drawable/ic_edit_text"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="20dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_below="@id/editTextKualifikasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_buat"
+                    android:text="Button"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"/>
 
             </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/formBuatLowongan"
-        android:layout_centerInParent="true"
-        android:background="@drawable/ic_buat"
-        android:text="Button"
-        android:textColor="@color/white"/>
 
 </RelativeLayout>

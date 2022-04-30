@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/check.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_check.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_berhasil_buat_lowongan.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_buat_lowongan_perusahaan.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_home_perusahaan.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_kelola_pelamar_perusahaan.xml" value="0.17604166666666668" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/gradient_button.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/gradient_buttonn.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/ic_back.xml" value="0.17407407407407408" />
@@ -12,26 +18,12 @@
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/ic_intro_screen.xml" value="0.1" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/ic_username_et.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout-land/activity_main.xml" value="0.23472222222222222" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_akun_pencari_kerja.xml" value="0.22" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_bookmark_pencari_kerja.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_coming_soon.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_comingsoon_perusahaan.xml" value="0.134765625" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_home_pencari_kerja.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_reset_password.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_reset_password_perusahaan.xml" value="0.134765625" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_reset_passwords.xml" value="0.134765625" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_reset_passwords_perusahaan.xml" value="0.134765625" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_sign_in_perusahaan.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_sign_up_perusahaan.xml" value="0.134765625" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_signin.xml" value="0.22" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_signin_perusahaan.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_reset_password.xml" value="0.22" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_signin.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_signup.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_signup_perusahaan.xml" value="0.12421875" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_splash_screen.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/fragment_akun_perusahaan.xml" value="0.134765625" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/fragment_home_perusahaan.xml" value="0.134765625" />
-        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/reset_password_perusahaan.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_splash_screen.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/splash_screen.xml" value="0.1597222222222222" />
       </map>
     </option>

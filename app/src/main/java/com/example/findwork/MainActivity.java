@@ -11,7 +11,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.findwork.pencarikerja.HomePencariKerjaActivity;
+import com.example.findwork.perusahaan.BerhasilBuatLowonganActivity;
+import com.example.findwork.perusahaan.BuatLowonganPerusahaanActivity;
 import com.example.findwork.perusahaan.HomePerusahaanActivity;
+import com.example.findwork.perusahaan.SignInPerusahaanActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -68,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         btn_perusahaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, signinPerusahaan.class));
+                startActivity(new Intent(MainActivity.this, SignInPerusahaanActivity.class));
             }
         });
     }

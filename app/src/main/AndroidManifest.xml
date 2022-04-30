@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
         <activity
+            android:name=".perusahaan.BerhasilBuatLowonganActivity"
+            android:exported="false" />
+        <activity
             android:name=".resetPasswords"
             android:exported="false" />
         <activity
