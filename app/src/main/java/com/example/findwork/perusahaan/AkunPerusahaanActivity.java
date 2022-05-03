@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
+import com.example.findwork.MainActivity;
 import com.example.findwork.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -19,6 +22,7 @@ public class AkunPerusahaanActivity extends AppCompatActivity {
 
         //Initialize And Assign Variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavPerusahaan);
+        Button btnProfilPerusahaan = findViewById(R.id.buttonSignOut);
 
         //Set Home Selected
         bottomNavigationView.setSelectedItemId(R.id.akunPerusahaan);
@@ -40,6 +44,13 @@ public class AkunPerusahaanActivity extends AppCompatActivity {
                         return true;
                 }
                 return false;
+            }
+        });
+
+        btnProfilPerusahaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AkunPerusahaanActivity.this, ProfilPerusahaanActivity.class));
             }
         });
     }

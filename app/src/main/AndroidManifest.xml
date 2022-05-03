@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
         <activity
-            android:name=".perusahaan.BerhasilBuatLowonganActivity"
+            android:name=".perusahaan.DetailPelamarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.MasukDalamPantauanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.PercakapanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.ProfilPerusahaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perusahaan.LowonganBerhasilDibuatActivity"
             android:exported="false" />
         <activity
             android:name=".resetPasswords"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".perusahaan.BerhasilBuatLowonganActivity"
+    tools:context=".perusahaan.LowonganBerhasilDibuatActivity"
     android:background="@drawable/ic_splash_screen"
     android:padding="20dp">
 
@@ -30,7 +30,8 @@
         android:layout_below="@id/check"
         android:layout_centerInParent="true"
         android:text="Lowongan Berhasil Dibuat"
-        android:textColor="#3885EC" />
+        android:textColor="#3885EC"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

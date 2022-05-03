@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.findwork.R;
 
-public class BerhasilBuatLowonganActivity extends AppCompatActivity {
+public class MasukDalamPantauanActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_berhasil_buat_lowongan);
+        setContentView(R.layout.activity_masuk_dalam_pantauan);
     }
 }

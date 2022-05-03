@@ -1,19 +1,16 @@
 package com.example.findwork;
 
-import static android.content.ContentValues.TAG;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.findwork.pencarikerja.HomePencariKerjaActivity;
-import com.example.findwork.perusahaan.BerhasilBuatLowonganActivity;
-import com.example.findwork.perusahaan.BuatLowonganPerusahaanActivity;
+import com.example.findwork.perusahaan.DetailPelamarActivity;
 import com.example.findwork.perusahaan.HomePerusahaanActivity;
+import com.example.findwork.perusahaan.PercakapanActivity;
 import com.example.findwork.perusahaan.SignInPerusahaanActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
