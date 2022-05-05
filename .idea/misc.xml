@@ -4,24 +4,45 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.1725" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/button_masuk_pantauan_background.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/button_neutral_background.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/chat.xml" value="0.1095" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/check.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/dialog_background.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/gradient_buttonn.xml" value="0.1305" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.124" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.136" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_baseline_photo_camera_24.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_button_akun.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_button_lihat.xml" value="0.17" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_check.xml" value="0.1" />
-        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_akun_perusahaan.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_cil_money.xml" value="0.124" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_corner_bg.xml" value="0.1305" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_lowongan_line.xml" value="0.17" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/ic_rectangle_biru.xml" value="0.114" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/konfirmasi_background.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/drawable/lowongan_kerja.xml" value="0.117" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_akun_pencari_kerja.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_akun_perusahaan.xml" value="0.22" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_berhasil_buat_lowongan.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_buat_lowongan_perusahaan.xml" value="0.1" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_comingsoon_perusahaan.xml" value="0.1" />
-        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_detail_pelamar.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_detail_pelamar.xml" value="0.1" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_home_perusahaan.xml" value="0.1" />
-        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_kelola_pelamar_perusahaan.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_job_detail.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_kelola_pelamar_perusahaan.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_masuk_dalam_pantauan.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_percakapan.xml" value="0.22" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_percakapan.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_profil_perusahaan.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/activity_signup_perusahaan.xml" value="0.1" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/fragment_pantauan.xml" value="0.12135416666666667" />
         <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/fragment_pelamar.xml" value="0.13541666666666666" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/item_lowongan_kerja.xml" value="0.1" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/item_pelamar.xml" value="0.14345991561181434" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/layout_dialog.xml" value="0.12907608695652173" />
+        <entry key="..\:/Users/PUTRA/Downloads/Macro Grup 4/findWork/app/src/main/res/layout/lowongan_kerja.xml" value="0.1" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/gradient_button.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/gradient_buttonn.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/drawable/ic_back.xml" value="0.17407407407407408" />

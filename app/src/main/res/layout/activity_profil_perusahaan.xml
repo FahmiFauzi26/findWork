@@ -154,7 +154,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:background="@drawable/ic_buat"
-                    android:text="Button"
+                    android:text="Simpan"
+                    style="@style/MaterialAlertDialog.Material3"
                     android:textColor="@color/white"
                     android:layout_marginVertical="20dp"/>
 

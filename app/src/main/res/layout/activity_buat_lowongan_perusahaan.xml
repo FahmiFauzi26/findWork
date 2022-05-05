@@ -191,15 +191,16 @@
                     android:paddingVertical="20dp" />
 
                 <Button
-                    android:id="@+id/button2"
-                    android:layout_below="@id/editTextKualifikasi"
+                    android:id="@+id/buttonBuatLowongan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextKualifikasi"
                     android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/ic_buat"
-                    android:text="Button"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="20dp"/>
+                    style="@style/MaterialAlertDialog.Material3"
+                    android:text="Buat"
+                    android:textColor="@color/white" />
 
             </RelativeLayout>
 

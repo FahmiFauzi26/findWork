@@ -22,7 +22,7 @@ public class AkunPerusahaanActivity extends AppCompatActivity {
 
         //Initialize And Assign Variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavPerusahaan);
-        Button btnProfilPerusahaan = findViewById(R.id.buttonSignOut);
+        Button btnProfilPerusahaan = findViewById(R.id.buttonProfil);
 
         //Set Home Selected
         bottomNavigationView.setSelectedItemId(R.id.akunPerusahaan);
