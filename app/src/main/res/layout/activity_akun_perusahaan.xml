@@ -59,9 +59,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/emailPerusahaan"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/ic_button_akun"
             android:paddingHorizontal="20dp"
-            android:layout_marginBottom="10dp"
             android:text="Profil"
             android:textAlignment="textStart"
             android:textColor="#FFFFFF"
@@ -94,12 +94,12 @@
         <Button
             android:id="@+id/buttonSignOut"
             style="@style/MaterialAlertDialog.Material3"
-            android:layout_below="@id/switchNotifikasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/switchNotifikasi"
             android:background="@drawable/ic_sign_out"
-            android:textColor="#FFFFFF"
-            android:text="Sign Out" />
+            android:text="Sign Out"
+            android:textColor="#FFFFFF" />
 
     </RelativeLayout>
 

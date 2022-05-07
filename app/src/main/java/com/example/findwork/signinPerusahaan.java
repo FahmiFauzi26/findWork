@@ -140,7 +140,7 @@ public class signinPerusahaan extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 Log.d(TAG, "onSuccess: "+ documentSnapshot.getData());
                 if(documentSnapshot.getString("isPerusahaan") != null)
-                    startActivity(new Intent(signinPerusahaan.this, comingsoonPerusahaan.class));
+                    startActivity(new Intent(signinPerusahaan.this, HomePerusahaanActivity.class));
                 finish();
             }
         });

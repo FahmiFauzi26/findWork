@@ -21,6 +21,101 @@
             android:textColor="#1A73E9"
             android:textStyle="bold" />
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/jobseeker1"
+            app:civ_border_color="@color/biru_findwork"
+            app:civ_border_width="1dp"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:id="@+id/namaPerusahaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Udin Sering Terluka"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailPerusahaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namaPerusahaan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:text="udin@gmail.com"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/buttonProfil"
+            style="@style/MaterialAlertDialog.Material3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailPerusahaan"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_button_akun"
+            android:paddingHorizontal="20dp"
+            android:text="Profil"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonDokumen"
+            style="@style/MaterialAlertDialog.Material3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonProfil"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_button_akun"
+            android:paddingHorizontal="20dp"
+            android:text="Dokumen"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/switchLokasiGPS"
+            android:layout_below="@id/buttonDokumen"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_button_akun_non_arrow"
+            android:text="Lokasi GPS"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+        <Switch
+            android:id="@+id/switchNotifikasi"
+            android:layout_below="@id/switchLokasiGPS"
+            android:paddingHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_button_akun_non_arrow"
+            android:layout_marginBottom="10dp"
+            android:text="Notifikasi"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/buttonSignOut"
+            style="@style/MaterialAlertDialog.Material3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switchNotifikasi"
+            android:background="@drawable/ic_sign_out"
+            android:text="Sign Out"
+            android:textColor="#FFFFFF" />
+
     </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

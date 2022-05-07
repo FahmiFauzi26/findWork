@@ -19,7 +19,35 @@
             android:layout_height="wrap_content"
             android:text="Home"
             android:textColor="#1A73E9"
+            android:textSize="16sp"
             android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/lowongan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search"
+            android:layout_marginVertical="10dp"
+            android:text="Lowongan"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewDaftarLowongan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lowongan" />
+
 
     </RelativeLayout>
 

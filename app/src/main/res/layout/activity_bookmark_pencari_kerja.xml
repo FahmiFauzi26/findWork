@@ -13,6 +13,7 @@
         android:layout_above="@id/bottomNavPencariKerja"
         android:padding="20dp">
 
+
         <TextView
             android:id="@+id/bookmarkTitle"
             android:layout_width="wrap_content"
@@ -20,6 +21,173 @@
             android:text="Bookmark"
             android:textColor="#1A73E9"
             android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookmarkTitle"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/bookmarsimbols"-->
+            <!--                android:layout_width="17dp"-->
+            <!--                android:layout_height="16dp"-->
+            <!--                android:layout_marginLeft="295dp"-->
+            <!--                android:layout_marginTop="7dp"-->
+            <!--                android:layout_marginRight="7dp"-->
+            <!--                android:background="@drawable/ic_bookmark" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/bookmarsimbol"
+                    android:layout_width="17dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginRight="8dp"
+
+                    android:background="@drawable/ic_bookmark" />
+
+                <TextView
+                    android:id="@+id/posisiLowonganView"
+                    android:layout_width="161dp"
+                    android:layout_height="wrap_content"
+                    android:text="Desainer Grafis"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namaPerusahaanView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="PT Aksepta Strategi Indonesia"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_carbon_location" />
+
+                    <TextView
+                        android:id="@+id/alamatLowonganView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Magelang, Jawa Tengah"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cil_school" />
+
+                    <TextView
+                        android:id="@+id/minimalPendidikanView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Minimal pendidikan SMA/SMK Sederakat"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cil_money" />
+
+                    <TextView
+                        android:id="@+id/gajiView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Gaji : 4.000.000 - 5.000.000"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_healthicons_i_schedule_school_date_time_outline" />
+
+                    <TextView
+                        android:id="@+id/tenggatLowonganView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Tenggat 04 Mei 2022"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:src="@drawable/ic_lowongan_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_lihat"
+                        style="@style/MaterialAlertDialog.Material3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_button_lihat"
+                        android:minHeight="35dp"
+                        android:text="Lihat"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 

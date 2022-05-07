@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pencarikerja.ProfilPencariKerja"
+    android:background="@drawable/ic_splash_screen"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-10dp"
+        android:background="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_back"
+        android:padding="10dp"
+        android:text="Profil"
+        android:textColor="#1A73E9" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_below="@id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/jobseeker1"
+            app:civ_border_color="@color/biru_findwork"
+            app:civ_border_width="1dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@id/profilePicture"
+            app:layout_constraintEnd_toEndOf="@id/profilePicture"
+            app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+            app:fabSize="mini"
+            tools:ignore="VectorDrawableCompat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="231dp"
+        android:text="Nama"
+        android:textSize="14sp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginRight="20dp"
+        android:hint="Udin Sering Terluka"
+        android:textSize="14sp"
+        android:textColorHint="#1A73E9"/>
+
+    <TextView
+        android:layout_width="122dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="298dp"
+        android:text="Tanggal Lahir"
+        android:textSize="14sp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="319dp"
+        android:layout_marginRight="20dp"
+        android:hint="19/09/1999"
+        android:textSize="14sp"
+        android:textColorHint="#1A73E9"/>
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="17dp"
+        android:text="Email"
+        android:textSize="14sp"
+        android:layout_marginTop="365dp"
+        android:layout_marginLeft="28dp"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="386dp"
+        android:layout_marginRight="20dp"
+        android:hint="udin@gmail.com"
+        android:textColorHint="#1A73E9"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="103dp"
+        android:layout_height="17dp"
+        android:text="No. Telepon"
+        android:textSize="14sp"
+        android:layout_marginTop="432dp"
+        android:layout_marginLeft="28dp"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="453dp"
+        android:layout_marginRight="20dp"
+        android:hint="+6281993847584"
+        android:textColorHint="#1A73E9"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_buat"
+        android:text="Simpan"
+        style="@style/MaterialAlertDialog.Material3"
+        android:textColor="@color/white"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="77dp"/>
+
+
+</RelativeLayout>

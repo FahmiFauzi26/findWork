@@ -11,9 +11,12 @@ import android.widget.Button;
 
 import com.example.findwork.MainActivity;
 import com.example.findwork.R;
+import com.example.findwork.signin;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class AkunPerusahaanActivity extends AppCompatActivity {
+    Button btnProfilPerusahaan,buttonSignOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +25,8 @@ public class AkunPerusahaanActivity extends AppCompatActivity {
 
         //Initialize And Assign Variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavPerusahaan);
-        Button btnProfilPerusahaan = findViewById(R.id.buttonProfil);
+        btnProfilPerusahaan = findViewById(R.id.buttonProfil);
+        buttonSignOut = findViewById(R.id.buttonSignOut);
 
         //Set Home Selected
         bottomNavigationView.setSelectedItemId(R.id.akunPerusahaan);
@@ -53,5 +57,17 @@ public class AkunPerusahaanActivity extends AppCompatActivity {
                 startActivity(new Intent(AkunPerusahaanActivity.this, ProfilPerusahaanActivity.class));
             }
         });
+        buttonSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                logoutUser();
+            }
+        });
+    }
+    private void logoutUser(){
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(AkunPerusahaanActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
