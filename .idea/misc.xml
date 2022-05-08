@@ -18,7 +18,9 @@
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_bookmark_pencari_kerja.xml" value="0.22" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_coming_soon.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_comingsoon_perusahaan.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_detail_lowongan_hijau.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_detail_pelamar.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_detail_perjalanan_saya.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_dokumen_buat_pencari_kerja.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_dokumen_detail_pencari_kerja.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_dokumen_pencari_kerja.xml" value="0.14666666666666667" />
@@ -26,9 +28,12 @@
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_home_pencari_kerja.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_home_perusahaan.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_job_detail.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_kelola_pelamar_perusahaan.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_lamar_pekerjaan.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_lamaran_terkirim.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_percakapan.xml" value="0.12" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_percakapan_pencari_kerja.xml" value="0.12" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_perjalanan_pencari_kerja.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_profil_pencari_kerja.xml" value="0.22" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_profil_perusahaan.xml" value="0.134765625" />
@@ -45,6 +50,10 @@
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/activity_splash_screen.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/fragment_akun_perusahaan.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/fragment_home_perusahaan.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/fragment_melamar.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/fragment_pantauan.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/fragment_pelamar.xml" value="0.134765625" />
+        <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/fragment_tertarik.xml" value="0.22" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/item_lowongan_kerja.xml" value="0.134765625" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/item_lowongan_kerja_bookmarked.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/uzi/AndroidStudioProjects/FindWork/app/src/main/res/layout/item_lowongan_kerjas.xml" value="0.16666666666666666" />
