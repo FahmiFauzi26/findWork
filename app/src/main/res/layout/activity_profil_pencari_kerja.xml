@@ -72,8 +72,8 @@
         android:layout_marginTop="252dp"
         android:layout_marginRight="20dp"
         android:hint="Udin Sering Terluka"
-        android:textSize="14sp"
-        android:textColorHint="#1A73E9"/>
+        android:textColorHint="#1A73E9"
+        android:textSize="14sp" />
 
     <TextView
         android:layout_width="122dp"
@@ -129,16 +129,17 @@
         android:hint="+6281993847584"
         android:textColorHint="#1A73E9"
         android:textSize="14sp" />
+
     <Button
         android:id="@+id/btn_simpan"
+        style="@style/MaterialAlertDialog.Material3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="520dp"
         android:background="@drawable/ic_buat"
         android:text="Simpan"
-        style="@style/MaterialAlertDialog.Material3"
-        android:textColor="@color/white"
-        android:layout_marginTop="520dp"
-        android:layout_marginLeft="77dp"/>
+        android:textColor="@color/white" />
 
 
 </RelativeLayout>

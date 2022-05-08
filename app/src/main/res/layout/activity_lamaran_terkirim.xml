@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pencarikerja.LamaranTerkirim"
+    android:background="@drawable/ic_splash_screen"
+    android:padding="20dp">
+
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-10dp"
+        android:background="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_back"
+        android:padding="10dp"
+        android:text="Mengirim"
+        android:textColor="#1A73E9" />
+
+    <ImageView
+        android:id="@+id/terkirim"
+        android:layout_width="215dp"
+        android:layout_height="195dp"
+        android:background="@drawable/lamaranterkirim"
+        android:layout_marginTop="235dp"
+        android:layout_marginLeft="72dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_lamaranterkirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/terkirim"
+        android:layout_marginLeft="94dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginTop="10dp"
+        android:text="Lamaran terkirim"
+        android:textColor="#1A73E9"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btn_kembali"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="131dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/tv_lamaranterkirim"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="115dp"
+        android:background="@drawable/ic_button_tertarik"
+        android:text="Kembali"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

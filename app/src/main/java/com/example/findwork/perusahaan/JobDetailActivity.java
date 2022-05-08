@@ -2,12 +2,17 @@ package com.example.findwork.perusahaan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.findwork.R;
+import com.example.findwork.pencarikerja.LamarPekerjaan;
 
 public class JobDetailActivity extends AppCompatActivity {
+    Button btn_lamarpekerjaan;
 
     TextView posisiLowonganView, namaPerusahaanView, alamatLowonganView, minimalPendidikanView, gajiView, tenggatLowonganView;
 
@@ -22,6 +27,7 @@ public class JobDetailActivity extends AppCompatActivity {
         minimalPendidikanView = findViewById(R.id.minimalPendidikanView);
         gajiView = findViewById(R.id.gajiView);
         tenggatLowonganView = findViewById(R.id.tenggatLowonganView);
+        btn_lamarpekerjaan = findViewById(R.id.btn_lamarpekerjaan);
 
         getIncomingExtra();
     }
@@ -37,6 +43,12 @@ public class JobDetailActivity extends AppCompatActivity {
 
             setDataActivity(posisiLowongan, namaPerusahaan, alamatLowongan, minimalPendidikan, gaji, tenggatLowongan);
         }
+        btn_lamarpekerjaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            startActivity(new Intent(JobDetailActivity.this, LamarPekerjaan.class));
+            }
+        });
     }
 
     private void setDataActivity(String posisiLowongan, String namaPerusahaan, String alamatLowongan, String minimalPendidikan, String gaji, String tenggatLowongan) {

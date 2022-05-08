@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindWork">
         <activity
+            android:name=".pencarikerja.LamaranTerkirim"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.LamarPekerjaan"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.DokumenUbahPencariKerja"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.DokumenDetailPencariKerja"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.DokumenBuatPencariKerja"
+            android:exported="false" />
+        <activity
+            android:name=".pencarikerja.DokumenPencariKerja"
+            android:exported="false" />
+        <activity
             android:name=".pencarikerja.ProfilPencariKerja"
             android:exported="false" />
         <activity

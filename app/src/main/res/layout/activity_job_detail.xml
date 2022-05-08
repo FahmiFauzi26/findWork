@@ -25,23 +25,24 @@
         android:textColor="#1A73E9" />
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_marginTop="20dp"
-        app:strokeWidth="1dp"
-        app:strokeColor="@color/biru_findwork"
-        app:cardCornerRadius="10dp"
-        android:layout_below="@id/textView"
+        android:id="@+id/cv_card"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/biru_findwork"
+        app:strokeWidth="1dp">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
-                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <TextView
                     android:id="@+id/posisiLowonganView"
@@ -55,9 +56,9 @@
                     android:id="@+id/namaPerusahaanView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="PT Aksepta Strategi Indonesia Tes"
                     android:textColor="#000000"
-                    android:layout_marginBottom="5dp"
                     android:textSize="12sp" />
 
                 <LinearLayout
@@ -69,15 +70,15 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_carbon_location"/>
+                        android:src="@drawable/ic_carbon_location" />
 
                     <TextView
                         android:id="@+id/alamatLowonganView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Magelang, Jawa Tengah Tes"
-                        android:layout_gravity="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -85,21 +86,21 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="3dp">
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_cil_school"/>
+                        android:src="@drawable/ic_cil_school" />
 
                     <TextView
                         android:id="@+id/minimalPendidikanView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Minimal pendidikan SMA/SMK Sederakat Tes"
-                        android:layout_gravity="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -107,21 +108,21 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="3dp">
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_cil_money"/>
+                        android:src="@drawable/ic_cil_money" />
 
                     <TextView
                         android:id="@+id/gajiView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Gaji : 4.000.000 - 5.000.000 Tes"
-                        android:layout_gravity="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -134,15 +135,15 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_healthicons_i_schedule_school_date_time_outline"/>
+                        android:src="@drawable/ic_healthicons_i_schedule_school_date_time_outline" />
 
                     <TextView
                         android:id="@+id/tenggatLowonganView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Tenggat 04 Mei 2022 Tes"
-                        android:layout_gravity="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -150,8 +151,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_lowongan_line"
-                    android:layout_marginVertical="10dp"/>
+                    android:layout_marginVertical="10dp"
+                    android:src="@drawable/ic_lowongan_line" />
 
                 <TextView
                     android:id="@+id/tentangPerusahaanView"
@@ -165,9 +166,9 @@
                     android:id="@+id/isiTentangPerusahaanView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="Ini Tentang Perusahaan"
                     android:textColor="#000000"
-                    android:layout_marginBottom="5dp"
                     android:textSize="12sp" />
 
                 <TextView
@@ -182,9 +183,9 @@
                     android:id="@+id/isiAlamatLowonganDetailView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="Ini Alamat Lowongan"
                     android:textColor="#000000"
-                    android:layout_marginBottom="5dp"
                     android:textSize="12sp" />
 
                 <TextView
@@ -199,9 +200,9 @@
                     android:id="@+id/isiDeskripsiPekerjaanView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="Ini Deskripsi Pekerjaan"
                     android:textColor="#000000"
-                    android:layout_marginBottom="5dp"
                     android:textSize="12sp" />
 
                 <TextView
@@ -216,15 +217,32 @@
                     android:id="@+id/isiKualifikasiView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="Ini Tentang Perusahaan"
                     android:textColor="#000000"
-                    android:layout_marginBottom="5dp"
                     android:textSize="12sp" />
 
             </LinearLayout>
 
         </ScrollView>
 
+
+
     </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btn_lamarpekerjaan"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/cv_card"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="115dp"
+        android:background="@drawable/ic_button_tertarik"
+        android:text="Lamar Pekerjaan"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

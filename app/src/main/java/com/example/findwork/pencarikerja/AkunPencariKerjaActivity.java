@@ -16,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AkunPencariKerjaActivity extends AppCompatActivity {
-    Button buttonProfil,buttonSignOut;
+    Button buttonProfil,buttonSignOut,buttonDokumen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,14 @@ public class AkunPencariKerjaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_akun_pencari_kerja);
         buttonProfil = findViewById(R.id.buttonProfil);
         buttonSignOut = findViewById(R.id.buttonSignOut);
+        buttonDokumen = findViewById(R.id.buttonDokumen);
+
+        buttonDokumen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AkunPencariKerjaActivity.this, DokumenPencariKerja.class));
+            }
+        });
 
         buttonProfil.setOnClickListener(new View.OnClickListener() {
             @Override

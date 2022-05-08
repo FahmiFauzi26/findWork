@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pencarikerja.DokumenUbahPencariKerja"
+    android:background="@drawable/ic_splash_screen"
+    android:padding="20dp">
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-10dp"
+        android:background="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_back"
+        android:padding="10dp"
+        android:text="Ubah Profil Dokumen"
+        android:textColor="#1A73E9" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="132dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Nama Profile"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ed_nama"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/tv_nama"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_ed_kosong"
+        android:hint=" Profil 1"
+        android:textColorHint="#323232"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="132dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/ed_nama"
+        android:text="Deskripsi"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ed_deskripsi"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/tv_deskripsi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_ed_kosong"
+        android:hint=" Dokumen desainer"
+        android:textColorHint="#323232"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_suratlamaran"
+        android:layout_width="132dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/ed_deskripsi"
+        android:text="Surat Lamaran"
+        android:textSize="14sp" />
+
+    <Button
+
+        android:id="@+id/btn_suratlamaran"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_suratlamaran"
+        android:layout_marginLeft="20dp"
+        android:background="#3885EC"
+        style="@style/MaterialAlertDialog.Material3"
+        android:text="Terlampir"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tv_cv"
+        android:layout_width="132dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/btn_suratlamaran"
+        android:text="CV"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_cv"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_cv"
+        android:layout_marginLeft="20dp"
+        android:background="#3885EC"
+        style="@style/MaterialAlertDialog.Material3"
+        android:text="Terlampir"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tv_portofolio"
+        android:layout_width="132dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/btn_cv"
+        android:text="Portofolio"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_portofolio"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_portofolio"
+        android:layout_marginLeft="20dp"
+        android:background="#3885EC"
+        style="@style/MaterialAlertDialog.Material3"
+        android:text="Terlampir"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_portofolio"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_buat"
+        android:text="Simpan"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
